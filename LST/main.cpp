@@ -10,6 +10,19 @@
 using namespace std;
 
 int main() {
-    Pet base;
+    string input;
+    do {
+        Pet base;
+        cin >> input;
+        if (input == "feed"){
+            base.feed();
+        } else if (input == "play"){
+            base.play();
+        } else if (input == "tuck into bed"){
+            base.tuck();
+        } else if (input == "train"){
+            base.train();
+        }
+    } while (input != "quit");
     return 0;
 }

@@ -20,17 +20,22 @@ public:
     Pet();
     int getHunger() { return hunger; };
     int getSleepy() { return sleepy; };
-    int getBored() { return bored; };
+    int getIntelligence() { return intelligence; };
     int getHappy() { return happy; };
     
     void setHunger(double h) { hunger = h; };
     void setSleepy(double h) { sleepy = h; };
-    void setBored(double h) { bored = h; };
+    void setIntelligence(double h) { intelligence = h; };
     void setHappy(double h) { happy = h; };
+    
+    void play();
+    void tuck();
+    void train();
+    void feed();
 private:
     int hunger;
     int sleepy;
-    int bored;
+    int intelligence;
     int happy;
 };
 
