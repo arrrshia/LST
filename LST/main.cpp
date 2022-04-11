@@ -6,10 +6,10 @@
 //
 
 #include <iostream>
+#include "LST.h";
 using namespace std;
 
-
 int main() {
-    cout << "Hello, World!\n";
+    Pet base;
     return 0;
 }
