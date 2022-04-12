@@ -1,7 +1,6 @@
 #include "LST.h"
 
 Pet::Pet(){
-    cout << "Congrats! You got a New Pet!" << endl;
     srand (time(NULL));
     
     int hung = rand() % 10 + 1;

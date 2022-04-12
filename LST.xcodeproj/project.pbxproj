@@ -10,6 +10,8 @@
 		51CE055D2804A8B200826F22 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51CE055C2804A8B200826F22 /* main.cpp */; };
 		51CE05642804CC9400826F22 /* LST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51CE05632804CC9400826F22 /* LST.cpp */; };
 		51CE05682805F07D00826F22 /* Quokka.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51CE05662805F07D00826F22 /* Quokka.cpp */; };
+		51CE056B2806088200826F22 /* Otter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51CE05692806088200826F22 /* Otter.cpp */; };
+		51CE056E2806088F00826F22 /* Platypi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51CE056C2806088F00826F22 /* Platypi.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		51CE05652804D00C00826F22 /* LST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LST.h; sourceTree = "<group>"; };
 		51CE05662805F07D00826F22 /* Quokka.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Quokka.cpp; sourceTree = "<group>"; };
 		51CE05672805F07D00826F22 /* Quokka.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Quokka.hpp; sourceTree = "<group>"; };
+		51CE05692806088200826F22 /* Otter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Otter.cpp; sourceTree = "<group>"; };
+		51CE056A2806088200826F22 /* Otter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Otter.hpp; sourceTree = "<group>"; };
+		51CE056C2806088F00826F22 /* Platypi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Platypi.cpp; sourceTree = "<group>"; };
+		51CE056D2806088F00826F22 /* Platypi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Platypi.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				51CE05632804CC9400826F22 /* LST.cpp */,
 				51CE05652804D00C00826F22 /* LST.h */,
 				51CE05662805F07D00826F22 /* Quokka.cpp */,
+				51CE05692806088200826F22 /* Otter.cpp */,
+				51CE056C2806088F00826F22 /* Platypi.cpp */,
+				51CE056D2806088F00826F22 /* Platypi.hpp */,
+				51CE056A2806088200826F22 /* Otter.hpp */,
 				51CE05672805F07D00826F22 /* Quokka.hpp */,
 			);
 			path = LST;
@@ -129,6 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51CE056B2806088200826F22 /* Otter.cpp in Sources */,
+				51CE056E2806088F00826F22 /* Platypi.cpp in Sources */,
 				51CE055D2804A8B200826F22 /* main.cpp in Sources */,
 				51CE05682805F07D00826F22 /* Quokka.cpp in Sources */,
 				51CE05642804CC9400826F22 /* LST.cpp in Sources */,

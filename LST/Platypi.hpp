@@ -1,12 +1,12 @@
 //
-//  Quokka.hpp
+//  Platypi.hpp
 //  LST
 //
 //  Created by Andrew Almasi on 4/12/22.
 //
 
-#ifndef Quokka_h
-#define Quokka_h
+#ifndef Platypi_h
+#define Platypi_h
 #include "LST.h"
 #include <iostream>
 #include <string>
@@ -18,11 +18,11 @@
 
 using namespace std;
 
-class Quokka : public Pet
+class Platypi : public Pet
 {
 public:
-    Quokka() : Pet(){
-        cout << "A QUOKKA!!!!" << endl;
+    Platypi() : Pet(){
+        cout << "A PLATYPI!!!!" << endl;
     }
     
     void play();

@@ -1,12 +1,12 @@
 //
-//  Quokka.hpp
+//  Otter.hpp
 //  LST
 //
 //  Created by Andrew Almasi on 4/12/22.
 //
 
-#ifndef Quokka_h
-#define Quokka_h
+#ifndef Otter_h
+#define Otter_h
 #include "LST.h"
 #include <iostream>
 #include <string>
@@ -18,11 +18,11 @@
 
 using namespace std;
 
-class Quokka : public Pet
+class Otter : public Pet
 {
 public:
-    Quokka() : Pet(){
-        cout << "A QUOKKA!!!!" << endl;
+    Otter() : Pet(){
+        cout << "AN OTTER!!!!" << endl;
     }
     
     void play();
