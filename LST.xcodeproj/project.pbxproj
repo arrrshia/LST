@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		51CE055D2804A8B200826F22 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51CE055C2804A8B200826F22 /* main.cpp */; };
 		51CE05642804CC9400826F22 /* LST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51CE05632804CC9400826F22 /* LST.cpp */; };
+		51CE05682805F07D00826F22 /* Quokka.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51CE05662805F07D00826F22 /* Quokka.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		51CE055C2804A8B200826F22 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		51CE05632804CC9400826F22 /* LST.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LST.cpp; sourceTree = "<group>"; };
 		51CE05652804D00C00826F22 /* LST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LST.h; sourceTree = "<group>"; };
+		51CE05662805F07D00826F22 /* Quokka.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Quokka.cpp; sourceTree = "<group>"; };
+		51CE05672805F07D00826F22 /* Quokka.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Quokka.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				51CE055C2804A8B200826F22 /* main.cpp */,
 				51CE05632804CC9400826F22 /* LST.cpp */,
 				51CE05652804D00C00826F22 /* LST.h */,
+				51CE05662805F07D00826F22 /* Quokka.cpp */,
+				51CE05672805F07D00826F22 /* Quokka.hpp */,
 			);
 			path = LST;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51CE055D2804A8B200826F22 /* main.cpp in Sources */,
+				51CE05682805F07D00826F22 /* Quokka.cpp in Sources */,
 				51CE05642804CC9400826F22 /* LST.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <thread>
+#include <atomic>
+
 using namespace std;
 
 class Pet
@@ -28,10 +31,13 @@ public:
     void setIntelligence(double h) { intelligence = h; };
     void setHappy(double h) { happy = h; };
     
-    void play();
-    void tuck();
-    void train();
-    void feed();
+    virtual void play();
+    virtual void tuck();
+    virtual void train();
+    virtual void feed();
+    
+    virtual void print();
+    
 private:
     int hunger;
     int sleepy;

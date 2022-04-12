@@ -25,27 +25,59 @@ Pet::Pet(){
 }
 
 void Pet::play(){
-    setHappy(happy + 10);
-    setSleepy(sleepy + 15);
-    setHunger(hunger + 20);
-    setIntelligence(intelligence - 10);
+    setHappy(happy + 5);
+    setSleepy(sleepy + 8);
+    setHunger(hunger + 10);
+    setIntelligence(intelligence - 5);
+    print();
 }
 
 void Pet::tuck(){
     setHappy(happy + 5);
-    setSleepy(sleepy - 20);
-    setHunger(hunger + 10);
+    setSleepy(sleepy - 10);
+    setHunger(hunger + 5);
+    print();
 }
 
 void Pet::train(){
     setHappy(happy - 5);
-    setSleepy(sleepy + 20);
-    setHunger(hunger + 15);
-    setIntelligence(intelligence + 20);
+    setSleepy(sleepy + 10);
+    setHunger(hunger + 5);
+    setIntelligence(intelligence + 10);
+    print();
 }
 
 void Pet::feed(){
-    setHunger(hunger - 15);
+    setHunger(hunger - 5);
     setHappy(happy + 3);
     setSleepy(sleepy + 10);
+    print();
 }
+
+void Pet::print(){
+    cout << "-------------------------------------------------------------------------------------------" << endl;
+    if (hunger > 100){
+        cout << "Hunger is maxed out! They're stuffed!" << endl;
+    } else {
+        cout << "Hunger: " << getHunger() << endl;
+    }
+    if (sleepy > 100){
+        cout << "They're too sleepy! Please tuck them in!" << endl;
+    } else {
+        cout << "Sleep: " << getSleepy() << endl;
+    }
+    if (intelligence < 0){
+        cout << "Intelligence is so low! They're dumb! Please train them!" << endl;
+    } else {
+        cout << "Intelligence: " << getIntelligence() << endl;
+    }
+    if (happy > 100){
+        cout << "Happiness is maxed out! Good job!" << endl;
+    } else if (happy < 0){
+        cout << "Depression has gotten to them. Please play with them" << endl;
+    } else {
+        cout << "Happiness: " << getHappy() << endl;
+    }
+    cout << "-------------------------------------------------------------------------------------------" << endl;
+}
+
