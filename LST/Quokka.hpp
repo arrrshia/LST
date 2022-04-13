@@ -22,16 +22,16 @@ class Quokka : public Pet
 {
 public:
     Quokka() : Pet(){
-        cout << "A QUOKKA!!!!" << endl;
+        cout << "" << endl;
     }
-    
+    Quokka(string _name, int _hunger, int _happy, int _sleepy, int _intelligence) : Pet(_name, _hunger, _happy, _sleepy, _intelligence){
+        cout << "Loading in " << _name << endl;
+    }
     void play();
     void tuck();
     void train();
     void feed();
-    void print();
-    
-    //void print();
+    string getType() {return "Quokka";};
     
 private:
     int hunger;

@@ -45,31 +45,3 @@ void Platypi::feed(){
     print();
 }
 
-void Platypi::print(){
-    cout << "-------------------------------------------------------------------------------------------" << endl;
-    if (getHunger() < 0){
-        cout << "Hunger is maxed out! Their tummy is stuffed!" << endl;
-    } else if (getHunger() > 100){
-        cout << "Theyre Starving, please feed them!" << endl;
-    } else {
-        cout << "Hunger: " << getHunger() << endl;
-    }
-    if (getSleepy() > 100){
-        cout << "They're too sleepy! Please tuck them in!" << endl;
-    } else {
-        cout << "Sleep: " << getSleepy() << endl;
-    }
-    if (getIntelligence() < 0){
-        cout << "Intelligence is so low! They're dumb! Please train them!" << endl;
-    } else {
-        cout << "Intelligence: " << getIntelligence() << endl;
-    }
-    if (getHappy() > 100){
-        cout << "Happiness is maxed out!" << endl;
-    } else if (getHappy() < 0){
-        cout << "They're depressed! Play with them please!" << endl;
-    } else {
-        cout << "Happiness: " << getHappy() << endl;
-    }
-    cout << "-------------------------------------------------------------------------------------------" << endl;
-}

@@ -6,72 +6,282 @@
 //
 
 #include <iostream>
-#include "LST.h";
-#include "Quokka.hpp";
-#include "Platypi.hpp";
+#include "LST.h"
+#include "Quokka.hpp"
+#include "Platypi.hpp"
 #include "Otter.hpp"
+#include <iostream>
 using namespace std;
 
 int main() {
-    string input;
-    cout << "Welcome to PP! Choose your pet below!" << endl;
-    cout << "Option 1: Quokka" << endl;
-    cout << "Option 2: Platypi" << endl;
-    cout << "Option 3: Otter" << endl;
-    cout << "Choose your pet by typing in your option below!" << endl;
-    string pet;
-    cin >> pet;
-    cout << "-------------------------------------------------------------------------------------------" << endl;
-    if (pet == "Quokka" || pet == "quokka")
-    {
-        cout << "Congrats! You got a New Quokka!" << endl;
-        Quokka base;
-        do {
-            getline(cin, input);
-            if (input == "feed"){
-                base.feed();
-            } else if (input == "play"){
-                base.play();
-            } else if (input == "tuck into bed"){
-                base.tuck();
-            } else if (input == "train"){
-                base.train();
+    cout << "Would you like to load a file? Respond Y/N" << endl;
+    string response;
+    cin >> response;
+    if (response == "N"){
+        string input;
+        string name;
+        cout << "Welcome to PP! Choose your pet below!" << endl;
+        cout << "Option 1: Quokka" << endl;
+        cout << "Option 2: Platypi" << endl;
+        cout << "Option 3: Otter" << endl;
+        cout << "Choose your pet by typing down below!" << endl;
+        string pet;
+        cin >> pet;
+        cout << "Whats their name?" << endl;
+        cin >> name;
+        cout << "-------------------------------------------------------------------------------------------" << endl;
+        if (pet == "Quokka" || pet == "quokka")
+        {
+            cout << "Congrats! You got a New Quokka!" << endl;
+            Quokka base;
+            base.setName(name);
+            base.intro();
+            do {
+                getline(cin, input);
+                if (input == "feed" || input == "Feed"){
+                    base.feed();
+                } else if (input == "play" || input == "Play"){
+                    base.play();
+                } else if (input == "tuck into bed" || input == "Tuck into bed"){
+                    base.tuck();
+                } else if (input == "train" || input == "Train"){
+                    base.train();
+                } else if (input == "quit" || input == "Quit"){
+                    ofstream fout; // Output file stream
+
+                    // Open file
+                    fout.open("data.txt");
+
+                    if (!fout.is_open()) {
+                        cout << "Could not open file data.txt." << endl;
+                        return -1;
+                    }
+
+                      // Write to file
+                    fout << base.getType() << " " << endl;
+                    fout << base.getName() << " " << endl;
+                    fout << base.getHunger() << " " << endl;
+                    fout << base.getHappy() << " " << endl;
+                    fout << base.getSleepy() << " " << endl;
+                    fout << base.getIntelligence() << " " << endl;
+                      // Done with file, so close
+                    fout.close();
+                    cout << "Successfully saved data. Say Bye to proceed." << endl;
+                    return -1;
+                }
+            } while (input != "Bye" || input != "bye");
+        }
+        if (pet == "Platypi" || pet == "platypi")
+        {
+            cout << "Congrats! You got a New Platypi!" << endl;
+            Platypi base;
+            base.setName(name);
+            base.intro();
+            do {
+                getline(cin, input);
+                if (input == "feed" || input == "Feed"){
+                    base.feed();
+                } else if (input == "play" || input == "Play"){
+                    base.play();
+                } else if (input == "tuck into bed" || input == "Tuck into bed"){
+                    base.tuck();
+                } else if (input == "train" || input == "Train"){
+                    base.train();
+                } else if (input == "quit" || input == "Quit"){
+                    ofstream fout; // Output file stream
+
+                    // Open file
+                    fout.open("data.txt");
+
+                    if (!fout.is_open()) {
+                        cout << "Could not open file data.txt." << endl;
+                        return -1;
+                    }
+
+                      // Write to file
+                    fout << base.getType() << " " << endl;
+                    fout << base.getName() << " " << endl;
+                    fout << base.getHunger() << " " << endl;
+                    fout << base.getHappy() << " " << endl;
+                    fout << base.getSleepy() << " " << endl;
+                    fout << base.getIntelligence() << " " << endl;
+                      // Done with file, so close
+                    fout.close();
+                    cout << "Successfully saved data. Say Bye to proceed." << endl;
+                    return -1;
+                }
+            } while (input != "Bye" || input!= "bye");
+        }
+        if (pet == "Otter" || pet == "otter")
+        {
+            cout << "Congrats! You got a New Otter!" << endl;
+            Otter base;
+            base.setName(name);
+            base.intro();
+            do {
+                getline(cin, input);
+                if (input == "feed" || input == "Feed"){
+                    base.feed();
+                } else if (input == "play" || input == "Play"){
+                    base.play();
+                } else if (input == "tuck into bed" || input == "Tuck into bed"){
+                    base.tuck();
+                } else if (input == "train" || input == "Train"){
+                    base.train();
+                } else if (input == "quit" || input == "Quit"){
+                    ofstream fout; // Output file stream
+
+                    // Open file
+                    fout.open("data.txt");
+
+                    if (!fout.is_open()) {
+                        cout << "Could not open file data.txt." << endl;
+                        return -1;
+                    }
+
+                      // Write to file
+                    fout << base.getType() << " " << endl;
+                    fout << base.getName() << " " << endl;
+                    fout << base.getHunger() << " " << endl;
+                    fout << base.getHappy() << " " << endl;
+                    fout << base.getSleepy() << " " << endl;
+                    fout << base.getIntelligence() << " " << endl;
+                      // Done with file, so close
+                    fout.close();
+                    cout << "Successfully saved data. Say Bye to proceed." << endl;
+                    return -1;
+                }
+            } while (input != "Bye" || input != "bye");
             }
-        } while (input != "quit");
     }
-    if (pet == "Platypi" || pet == "platypi")
-    {
-        cout << "Congrats! You got a New Platypi!" << endl;
-        Platypi base;
-        do {
-            getline(cin, input);
-            if (input == "feed"){
-                base.feed();
-            } else if (input == "play"){
-                base.play();
-            } else if (input == "tuck into bed"){
-                base.tuck();
-            } else if (input == "train"){
-                base.train();
-            }
-        } while (input != "quit");
-    }
-    if (pet == "Otter" || pet == "otter")
-    {
-        cout << "Congrats! You got a New Otter!" << endl;
-        Otter base;
-        do {
-            getline(cin, input);
-            if (input == "feed"){
-                base.feed();
-            } else if (input == "play"){
-                base.play();
-            } else if (input == "tuck into bed"){
-                base.tuck();
-            } else if (input == "train"){
-                base.train();
-            }
-        } while (input != "quit");
-    }
-    return 0;
+
+    if (response == "Y") {
+        string t; string n; int h; int p; int s; int i;
+        ifstream fin;
+        fin.open("data.txt");
+        if (!(fin.is_open())){
+            cout << "File not found" << endl;
+            return -1;
+        }
+        fin >> t;
+        fin >> n;
+        fin >> h;
+        fin >> p;
+        fin >> s;
+        fin >> i;
+        if (t == "Quokka"){
+            Quokka base(n, h, p, s, i);
+            string input;
+            do {
+                getline(cin, input);
+                if (input == "feed" || input == "Feed"){
+                    base.feed();
+                } else if (input == "play" || input == "Play"){
+                    base.play();
+                } else if (input == "tuck into bed" || input == "Tuck into bed"){
+                    base.tuck();
+                } else if (input == "train" || input == "Train"){
+                    base.train();
+                } else if (input == "quit" || input == "Quit"){
+                    ofstream fout; // Output file stream
+
+                    // Open file
+                    fout.open("data.txt");
+
+                    if (!fout.is_open()) {
+                        cout << "Could not open file data.txt." << endl;
+                        return -1;
+                    }
+
+                      // Write to file
+                    fout << base.getType() << " " << endl;
+                    fout << base.getName() << " " << endl;
+                    fout << base.getHunger() << " " << endl;
+                    fout << base.getHappy() << " " << endl;
+                    fout << base.getSleepy() << " " << endl;
+                    fout << base.getIntelligence() << " " << endl;
+                      // Done with file, so close
+                    fout.close();
+                    cout << "Successfully saved data. Say Bye to proceed." << endl;
+                    return -1;
+                }
+            } while (input != "quit");
+        }
+        if (t == "Otter"){
+            Otter base(n, h, p, s, i);
+            string input;
+            do {
+                getline(cin, input);
+                if (input == "feed" || input == "Feed"){
+                    base.feed();
+                } else if (input == "play" || input == "Play"){
+                    base.play();
+                } else if (input == "tuck into bed" || input == "Tuck into bed"){
+                    base.tuck();
+                } else if (input == "train" || input == "Train"){
+                    base.train();
+                } else if (input == "quit" || input == "Quit"){
+                    ofstream fout; // Output file stream
+
+                    // Open file
+                    fout.open("data.txt");
+
+                    if (!fout.is_open()) {
+                        cout << "Could not open file data.txt." << endl;
+                        return -1;
+                    }
+
+                      // Write to file
+                    fout << base.getType() << " " << endl;
+                    fout << base.getName() << " " << endl;
+                    fout << base.getHunger() << " " << endl;
+                    fout << base.getHappy() << " " << endl;
+                    fout << base.getSleepy() << " " << endl;
+                    fout << base.getIntelligence() << " " << endl;
+                      // Done with file, so close
+                    fout.close();
+                    cout << "Successfully saved data. Say Bye to proceed." << endl;
+                    return -1;
+                }
+            } while (input != "quit");
+        }
+        if (t == "Platypi"){
+            Platypi base(n, h, p, s, i);
+            string input;
+            do {
+                getline(cin, input);
+                if (input == "feed" || input == "Feed"){
+                    base.feed();
+                } else if (input == "play" || input == "Play"){
+                    base.play();
+                } else if (input == "tuck into bed" || input == "Tuck into bed"){
+                    base.tuck();
+                } else if (input == "train" || input == "Train"){
+                    base.train();
+                } else if (input == "quit" || input == "Quit"){
+                    ofstream fout; // Output file stream
+
+                    // Open file
+                    fout.open("data.txt");
+
+                    if (!fout.is_open()) {
+                        cout << "Could not open file data.txt." << endl;
+                        return -1;
+                    }
+
+                      // Write to file
+                    fout << base.getType() << " " << endl;
+                    fout << base.getName() << " " << endl;
+                    fout << base.getHunger() << " " << endl;
+                    fout << base.getHappy() << " " << endl;
+                    fout << base.getSleepy() << " " << endl;
+                    fout << base.getIntelligence() << " " << endl;
+                      // Done with file, so close
+                    fout.close();
+                    cout << "Successfully saved data. Say Bye to proceed." << endl;
+                    return -1;
+                }
+            } while (input != "quit");
+return 0;
 }
+    }}
