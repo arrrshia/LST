@@ -1,6 +1,6 @@
 # Tamagotchi Project
 
-A Tamagotchi game I made for my COSC 1437 class.
+A Tamagotchi game I made for my COSC 1437 class (Second semester, Freshman year).
 
 ## Description
 
